@@ -265,3 +265,19 @@ footer {
     font-size: 1rem;
   }
 }
+/* Typing Effect */
+.typing {
+  border-right: 3px solid #ffb703;
+  font-weight: bold;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
