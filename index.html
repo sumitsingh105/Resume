@@ -12,9 +12,12 @@
     <nav>
       <h1>Sumit Singh</h1>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -23,41 +26,82 @@
   <!-- Hero Section -->
   <section class="hero">
     <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h2>Hello, I'm Sumit 👋</h2>
-    <p>Aspiring developer passionate about web development & problem solving.</p>
+    <h2>Hi, I'm Sumit Singh 👋</h2>
+    <p>Data Scientist | M.Tech IIT Goa | Infosys Senior Analyst</p>
+    <a href="assets/resume.pdf" download class="btn">Download Resume</a>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a software enthusiast skilled in HTML, CSS, JavaScript and eager to learn 
-      modern web frameworks. I love building clean, responsive, and user-friendly websites.
-    </p>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Senior Analyst – Data Science | Infosys, Bangalore</h3>
+      <p><em>July 2022 – Present | Clients: Rolls-Royce, Solar Turbines</em></p>
+      <ul>
+        <li>Developed ML models for TRENT engines using Python, SQL, Pandas, Scikit-learn.</li>
+        <li>Built TRENT XWB-84 model predicting TGT Margin with 70% accuracy.</li>
+        <li>Led Design Iteration 13 Model building for TRENT XWB-97 engine.</li>
+        <li>Implemented Tip Clearance Characterization Model (TCCM) for DI14.</li>
+        <li>Resolved BU70 extrapolation issue with MATLAB Simulink (recognized by Derby team).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>IIT Goa</strong> – M.Tech Mechanical Engineering | CGPA: 8.66 (2020–2022)</p>
+      <p><strong>IIT Madras</strong> – Diploma in Data Science | CGPA: 8.67 (2024–2025)</p>
+      <p><strong>GTU, Ahmedabad</strong> – B.E. Mechanical Engineering | CGPA: 8.43 (2013–2017)</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Programming:</strong> Python, MATLAB, SQL, NumPy, Pandas, Scikit-learn</div>
+      <div><strong>ML:</strong> Regression, Decision Trees, Classification</div>
+      <div><strong>Big Data & Cloud:</strong> Hadoop, Snowflake, ETL Pipelines</div>
+      <div><strong>APIs & Deployment:</strong> Docker, REST APIs, FastAPI, Render</div>
+      <div><strong>Engineering Software:</strong> MATLAB Simulink, Phobos, SPARTA DSMC</div>
+      <div><strong>Agile:</strong> Scrum, Sprint Planning, Backlog Management</div>
+    </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Resume Website</h3>
-        <p>A personal resume hosted on Vercel with a clean design.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio</h3>
-        <p>This portfolio site showcasing my skills and projects.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
+    <h2>Key Projects</h2>
+    <div class="project-card">
+      <h3>Engage to Value</h3>
+      <p>End-to-End ML pipeline with EDA, feature engineering, and predictive modeling.</p>
+    </div>
+    <div class="project-card">
+      <h3>Data Analyst Agent</h3>
+      <p>Agentic AI pipeline for data scraping, cleaning, and automated visualization.</p>
+    </div>
+    <div class="project-card">
+      <h3>Virtual Teaching Assistant</h3>
+      <p>AI-powered query system with FastAPI, Typesense, and Nomic embeddings. 
+      <a href="https://github.com/sumitsingh105/project1_tds_virtual_TA" target="_blank">GitHub</a></p>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can download my resume below:</p>
-    <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p>Machine Learning – Stanford University & DeepLearning.AI (Coursera, April 2023)</p>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li>3× Infosys Insta Award for excellence in Data Science delivery.</li>
+      <li>Second Rank – M.Tech, IIT Goa.</li>
+      <li>First Rank – Mechanical Engineering, GTU.</li>
+    </ul>
   </section>
 
   <!-- Contact -->
@@ -70,7 +114,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Sumit Singh. Built with ❤️</p>
+    <p>© 2025 Sumit Singh | Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
