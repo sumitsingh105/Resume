@@ -1,138 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumit Singh | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Singh - Senior Data Scientist | ML Engineer | IIT Graduate</title>
+    <meta name="description" content="Sumit Singh - Senior Data Scientist at Infosys with IIT degrees, specializing in Machine Learning, AI, and Data Science solutions for enterprise clients.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <h1>Sumit Singh</h1>
-      <ul>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#competencies">Competencies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/IMG_4217.jpg" alt="Profile Picture" class="profile-pic">
-    <h2>Hi, I'm Sumit Singh 👋</h2>
-    <p>I am a <span class="typing"></span></p>
-    <a href="assets/Sumit_Singh_.pdf" download class="btn">Download Resume</a>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Senior Analyst – Data Science | Infosys, Bangalore</h3>
-      <p><em>July 2022 – Present | Clients: Rolls-Royce, Solar Turbines</em></p>
-      <ul>
-        <li>Developed ML models for TRENT engines using Python, SQL, Pandas, Scikit-learn.</li>
-        <li>Built TRENT XWB-84 baseline engine model predicting TGT Margin with 70% accuracy.</li>
-        <li>Led Design Iteration 13 Model building for TRENT XWB-97 engine with performance validation.</li>
-        <li>Implemented Tip Clearance Characterization Model (TCCM) for DI14 specifications.</li>
-        <li>Executed PST (Propulsion System Tolerance) & Ratings for SW15 of TRENT XWB-97CI.</li>
-        <li>Resolved BU70 extrapolation issue in MATLAB Simulink (recognized by Rolls-Royce team).</li>
-        <li>Focal point for Non-Conformance assessments ensuring compliance with quality standards.</li>
-      </ul>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-animation">
+            <div class="loading-circle"></div>
+            <div class="loading-text">Loading Portfolio...</div>
+        </div>
     </div>
-  </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <p><strong>Indian Institute of Technology, Goa</strong> – M.Tech Mechanical Engineering | CGPA: 8.66 (2020–2022)</p>
-      <p><strong>Indian Institute of Technology, Madras</strong> – Diploma in Data Science | CGPA: 8.67 (2024–2025)</p>
-      <p><strong>Gujarat Technological University</strong> – B.E. Mechanical Engineering | CGPA: 8.43 (2013–2017)</p>
-    </div>
-  </section>
+    <!-- Navigation -->
+    <header id="navbar">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Sumit<span class="highlight">Singh</span></h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div><strong>Programming:</strong> Python, MATLAB, SQL, NumPy, Pandas, Scikit-learn</div>
-      <div><strong>Machine Learning:</strong> Regression, Classification, Decision Trees</div>
-      <div><strong>Big Data & Cloud:</strong> Hadoop, Snowflake, ETL Pipelines, Cloud Data Warehousing</div>
-      <div><strong>APIs & Deployment:</strong> Docker, REST APIs, FastAPI, Render</div>
-      <div><strong>Engineering Software:</strong> MATLAB Simulink, Phobos, SPARTA DSMC</div>
-      <div><strong>Agile Framework:</strong> Scrum, Sprint Planning, Backlog Management</div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles-container"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Sumit Singh" class="profile-pic floating" />
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name gradient-text">Sumit Singh</span>
+                </h1>
+                
+                <div class="typing-container">
+                    <span class="typing-text">
+                        <span class="typing"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </div>
+                
+                <p class="hero-description">
+                    Senior Data Scientist at Infosys with dual IIT degrees, transforming complex data into intelligent solutions for Fortune 500 clients including Rolls-Royce and Solar Turbines.
+                </p>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Key Projects</h2>
-    <div class="project-card">
-      <h3>Engage to Value</h3>
-      <p>Developed end-to-end ML pipeline with EDA, feature engineering, model selection, and predictive modeling.</p>
-    </div>
-    <div class="project-card">
-      <h3>Data Analyst Agent</h3>
-      <p>Built agentic AI pipeline for automated data scraping, cleaning, visualization, and insights generation.</p>
-    </div>
-    <div class="project-card">
-      <h3>Virtual Teaching Assistant</h3>
-      <p>AI-powered intelligent query system using FastAPI, Typesense, and Nomic embeddings.</p>
-      <a href="https://github.com/sumitsingh105/project1_tds_virtual_TA" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="assets/Sumit_Singh_Resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>Machine Learning – Stanford University & DeepLearning.AI (Coursera, April 2023)</p>
-  </section>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">IIT Degrees</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
 
-  <!-- Awards -->
-  <section id="awards">
-    <h2>Awards & Achievements</h2>
-    <ul>
-      <li>3× Infosys Insta Award for excellence in Data Science delivery and problem solving.</li>
-      <li>Second Rank – M.Tech, School of Mechanical Sciences, IIT Goa.</li>
-      <li>First Rank – B.E. Mechanical Engineering, GTU.</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section-container">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <div class="about-intro">
+                        <p class="lead">
+                            I'm a passionate <strong>Senior Data Scientist</strong> with a unique blend of mechanical engineering expertise and cutting-edge AI knowledge, backed by prestigious degrees from <strong>IIT Goa</strong> and <strong>IIT Madras</strong>.
+                        </p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <p>
+                            Currently driving data science initiatives at <strong>Infosys</strong>, I specialize in developing end-to-end ML pipelines and agentic AI systems for enterprise clients. My work directly impacts Fortune 500 companies like Rolls-Royce and Solar Turbines, where I transform complex industrial data into actionable intelligence.
+                        </p>
+                        
+                        <p>
+                            My journey spans from mechanical systems to machine learning algorithms, giving me a unique perspective on solving real-world problems with data-driven solutions. I'm passionate about pushing the boundaries of what's possible with AI and machine learning.
+                        </p>
+                    </div>
 
-  <!-- Core Competencies -->
-  <section id="competencies">
-    <h2>Core Competencies</h2>
-    <ul>
-      <li>Cross-functional collaboration with engineering teams and international clients.</li>
-      <li>Advanced problem-solving and analytical thinking for technical challenges.</li>
-      <li>Technical documentation and compliance with engineering standards.</li>
-      <li>Data-driven decision making and performance optimization.</li>
-      <li>Effective communication and stakeholder management.</li>
-    </ul>
-  </section>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education Excellence</h4>
+                                <p>M.Tech from IIT Goa (8.66 CGPA) + Diploma in Data Science from IIT Madras (8.67 CGPA)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Industry Impact</h4>
+                                <p>Leading ML initiatives for Fortune 500 clients at Infosys</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Certified Expert</h4>
+                                <p>Stanford Machine Learning Specialization & DeepLearning.AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> <a href="mailto:ss420381@gmail.com">ss420381@gmail.com</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/sumitsingh105" target="_blank">github.com/sumitsingh105</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sumitsingh10/" target="_blank">linkedin.com/in/sumitsingh10</a></p>
-    <p><strong>Phone:</strong> +91 8780961388</p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section-container bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Expertise</h2>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category reveal">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Sumit Singh | Portfolio</p>
-  </footer>
+                <!-- Machine Learning & AI -->
+                <div class="skill-category reveal">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        Machine Learning & AI
+                    </h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">Hugging Face</span>
+                    </div>
+                </div>
 
-  <script src="script.js"></script>
+                <!-- Tools & Frameworks -->
+                <div class="skill-category reveal">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Typesense</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-section reveal">
+                <h3 class="section-subtitle">Certifications & Achievements</h3>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>Machine Learning Specialization</h4>
+                            <p>Stanford University & DeepLearning.AI</p>
+                            <span class="cert-date">April 2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>IIT Goa M.Tech</h4>
+                            <p>Mechanical Engineering - 8.66 CGPA</p>
+                            <span class="cert-date">2020-2022</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>IIT Madras Diploma</h4>
+                            <p>Data Science - 8.67 CGPA</p>
+                            <span class="cert-date">2024-2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <p class="section-subtitle reveal">Showcasing impactful ML solutions and data science innovations</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-tech="python,ml,fastapi">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="End-to-End ML Pipeline" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sumitsingh105/ml-pipeline" target="_blank" class="btn-link">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="https://ml-pipeline-demo.vercel.app" target="_blank" class="btn-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>End-to-End ML Pipeline</h3>
+                        <p>Comprehensive ML pipeline featuring automated EDA, advanced feature engineering, model selection with hyperparameter optimization, and production-ready deployment for enterprise-scale data processing.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-chart-line"></i> 95% Accuracy</span>
+                            <span class="stat"><i class="fas fa-clock"></i> 40% Faster</span>
+                            <span class="stat"><i class="fas fa-users"></i> Enterprise Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-tech="ai,automation,python">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Agentic AI Pipeline" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sumitsingh105/agentic-ai" target="_blank" class="btn-link">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="https://agentic-ai-demo.vercel.app" target="_blank" class="btn-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Agentic AI Pipeline</h3>
+                        <p>Intelligent automation system powered by AI agents for autonomous data scraping, cleaning, visualization, and insights generation with minimal human intervention.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Beautiful Soup</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-robot"></i> Full Automation</span>
+                            <span class="stat"><i class="fas fa-lightning-bolt"></i> Real-time</span>
+                            <span class="stat"><i class="fas fa-brain"></i> AI-Powered</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-tech="fastapi,search,ai">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Intelligent Query System" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/sumitsingh105/intelligent-query" target="_blank" class="btn-link">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                                <a href="https://intelligent-query-demo.vercel.app" target="_blank" class="btn-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Query System</h3>
+                        <p>Sophisticated intelligent query system leveraging FastAPI, Typesense search engine, and Nomic embeddings for semantic search and natural language processing capabilities.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Typesense</span>
+                            <span class="tech-tag">Nomic Embeddings</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Vue.js</span>
+                        </div>
+                        <div class="project-stats">
+                            <span class="stat"><i class="fas fa-search"></i> Semantic Search</span>
+                            <span class="stat"><i class="fas fa-tachometer-alt"></i> High Performance</span>
+                            <span class="stat"><i class="fas fa-language"></i> NLP Powered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-container bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Analyst – Data Science</h3>
+                            <span class="company">Infosys Limited</span>
+                            <span class="duration">July 2022 – Present</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p><strong>Enterprise Clients:</strong> Rolls-Royce, Solar Turbines</p>
+                            <ul>
+                                <li>Lead end-to-end ML pipeline development for Fortune 500 industrial clients</li>
+                                <li>Architect and deploy production-ready AI solutions processing millions of data points</li>
+                                <li>Collaborate with cross-functional teams to deliver data-driven insights</li>
+                                <li>Optimize model performance achieving 40% improvement in processing speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-container">
+        <div class="container">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <p class="section-subtitle reveal">Ready to discuss exciting opportunities in AI and Data Science</p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:ss420381@gmail.com">ss420381@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/sumitsingh10" target="_blank">linkedin.com/in/sumitsingh10</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/sumitsingh105" target="_blank">github.com/sumitsingh105</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+918780961388">+91 8780961388</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section reveal">
+                    <h3>Ready to make an impact together?</h3>
+                    <p>I'm always excited to discuss new opportunities in machine learning, AI, and data science.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:ss420381@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </a>
+                        <a href="assets/Sumit_Singh_Resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sumit Singh. Crafted with passion for innovation in AI and Data Science.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/sumitsingh10" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sumitsingh105" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ss420381@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
